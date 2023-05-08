@@ -183,3 +183,6 @@ venv.bak/
 ### Dynaconf config
 **/*.local.yml
 **/.secrets.yml
+
+## Poetry lock
+*.lock

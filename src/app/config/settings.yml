@@ -1,0 +1,42 @@
+Database:
+  Driver: mysql+pymysql
+  Name: app
+#  Host: localhost
+  Host: fastapi_mysql # docker-compose 需要
+  Port: 3306
+  Username: root
+  Password: localhost123
+  Query:
+    charset: utf8mb4
+
+Logger:
+  Verbose: false
+  Debug: false
+  Level: debug
+  Path: logs
+  File: access.log
+  Rotation: 100 MB
+  Retention: 30 days
+  Encoding: utf-8
+
+Server:
+  Name: fastapi-demo
+  Host: 0.0.0.0
+  Port: 8000
+
+Redis:
+  MasterName: master
+#  Host: localhost
+  Host: fastapi_redis # docker-compose 需要
+  Port: 6379
+  Username:
+  Password:
+  DB: 12
+  Encoding: utf-8
+
+ElasticSearch:
+  Hosts: http://172.28.5.39:9200
+  Index: filebeat-ctocst_router_child-*
+  Username: qinzining
+  Password: qwe!23
+  Cert: /home/work/b_air_top/air_app/conf/ca.car

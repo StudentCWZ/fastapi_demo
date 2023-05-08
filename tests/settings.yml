@@ -1,0 +1,23 @@
+Database:
+  Driver: mysql+pymysql
+  Name: app
+  Host: localhost
+  Port: 3306
+  Username: root
+  Password: localhost123
+  Query:
+    charset: utf8mb4
+
+Logger:
+  Verbose: false
+  Debug: false
+  Level: debug
+  Path: logs
+  File: access.log
+  Rotation: 100 MB
+  Retention: 30 days
+  Encoding: utf-8
+
+Server:
+  Host: 127.0.0.1
+  Port: 8000
